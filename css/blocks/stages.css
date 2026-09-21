@@ -59,3 +59,22 @@
    line-height: 1.45;
    color: var(--color-text-muted);
 }
+
+
+
+
+@media (max-width: 1024px) {
+   .stages__title { font-size: 32px; }
+   .stages__grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+}
+
+@media (max-width: 768px) {
+   .stages { padding: 0 0 60px; }
+   .stages__title { font-size: 26px; margin-bottom: 30px; }
+   .stages__grid { grid-template-columns: 1fr; gap: 20px; }
+
+   .stage__card-photo-wrap { margin-bottom: 14px; }
+   .stage__card-number { width: 32px; height: 32px; top: 10px; left: 10px; }
+   .stage__card-title { font-size: 18px; }
+   .stage__card-text { font-size: 15px; }
+}

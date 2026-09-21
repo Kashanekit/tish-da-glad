@@ -74,3 +74,48 @@
 .discount__btn:hover {
    color: var(--color-primary);
 }
+
+
+
+@media (max-width: 1024px) {
+   .discount__title { font-size: 32px; }
+   .discount__subtitle { font-size: 17px; }
+   .discount__lines { width: 500px; right: -80px; }
+   .discount__btn { width: 260px; font-size: 16px; margin-right: -20px; }
+}
+
+@media (max-width: 768px) {
+   .discount__inner {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      min-height: auto;
+      padding: 40px 0;
+   }
+
+   .discount__content { max-width: 100%; }
+   .discount__title { font-size: 24px; margin-bottom: 16px; }
+   .discount__subtitle { font-size: 15px; max-width: 100%; }
+
+   .discount__visual {
+      justify-content: center;
+      min-height: 180px;
+      padding: 20px 0;
+   }
+
+   .discount__lines {
+      width: 100%;
+      max-width: 400px;
+      right: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   .discount__btn {
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 14px 22px;
+      font-size: 14px;
+   }
+}

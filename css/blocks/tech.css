@@ -154,3 +154,28 @@
    from { transform: rotate(0deg); }
    to { transform: rotate(360deg); }
 }
+
+
+
+@media (max-width: 1024px) {
+   .tech__title { font-size: 32px; }
+   .tech__device { width: 420px; opacity: 0.35; }
+   .tech__badge { width: 100px; height: 100px; }
+   .tech__badge-flower { width: 40px; height: 40px; }
+   .tech__badge-cover { width: 50px; height: 50px; }
+}
+
+@media (max-width: 768px) {
+   .tech { padding: 0 0 40px; }
+   .tech__title { font-size: 26px; margin-top: 30px; }
+   .tech__text { font-size: 16px; }
+   .tech__cards {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      gap: 16px;
+   }
+   .tech__card { padding: 16px; }
+   .tech__card-title { font-size: 18px; }
+   .tech__card-text { font-size: 15px; }
+   .tech__device { display: none; }
+}

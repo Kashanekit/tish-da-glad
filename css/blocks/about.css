@@ -99,3 +99,34 @@
    line-height: 1.5;
    color: var(--color-text-muted);
 }
+
+
+
+
+@media (max-width: 1024px) {
+   .about__grid { grid-template-columns: 320px 1fr; gap: 24px; }
+   .about__cards { gap: 24px; }
+   .about__title { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+   .about { padding: 50px 0 60px; }
+   .about__title { font-size: 26px; margin-bottom: 24px; }
+   .about__grid { grid-template-columns: 1fr; }
+
+   .about__intro {
+      min-height: 240px;
+      padding: 20px;
+   }
+
+   .about__intro-text { font-size: 16px; }
+   .about__intro-flower { width: 220px; height: auto; left: -30px; bottom: -20px; }
+
+   .about__cards { grid-template-columns: 1fr; gap: 16px; }
+   .info__card--3, .info__card--4 { margin-top: 0; }
+
+   .info__card { padding: 16px; }
+   .info__card-title { font-size: 18px; }
+   .info__card-text { font-size: 15px; }
+   .info__card-icon { width: 40px; height: 40px; margin-bottom: 12px; }
+}

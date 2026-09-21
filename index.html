@@ -22,36 +22,68 @@
 </head>
 <body>
 
-   <header class="header">
-      <div class="container header__inner">
-         <a href="#" class="header__logo logo">
-            <img src="./images/logo.svg" alt="Тишь да гладь" class="logo__img" width="20" height="40">
-            <span class="logo__text">
-               Тишь да гладь
-               <span class="logo__subtitle">студия лазерной эпиляции</span>
-            </span>
-         </a>
+<header class="header">
+<div class="container header__inner">
+   <a href="#" class="header__logo logo">
+      <img src="./images/logo.svg" alt="Тишь да гладь" class="logo__img" width="20" height="40">
+      <span class="logo__text">
+            Тишь да гладь
+            <span class="logo__subtitle">студия лазерной эпиляции</span>
+      </span>
+   </a>
 
-         <nav class="header__nav nav">
-            <ul class="nav__list">
-               <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
-               <li class="nav__item"><a href="#tech" class="nav__link">Аппарат</a></li>
-               <li class="nav__item"><a href="#price" class="nav__link">Прайс</a></li>
-               <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
-            </ul>
-         </nav>
+   <nav class="header__nav nav">
+      <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
+            <li class="nav__item"><a href="#tech" class="nav__link">Аппарат</a></li>
+            <li class="nav__item"><a href="#price" class="nav__link">Прайс</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+   </nav>
 
-         <div class="header__contacts">
-            <a href="tel:+79999873337" class="header__phone">+7 999 987-33-37</a>
-            <a href="https://t.me/" class="header__tg" aria-label="Telegram" target="_blank" rel="noopener">
-               <img src="./images/telegram.svg" alt=""  class="header__tg-icon" width="38" height="38">
-            </a>
-            <button class="btn btn--primary header__btn" type="button" data-modal-open>
-               Записаться
-            </button> 
-         </div>
-      </div>
-   </header>
+   <div class="header__contacts">
+      <a href="tel:+79999873337" class="header__phone">+7 999 987-33-37</a>
+      <a href="https://t.me/" class="header__tg" aria-label="Telegram" target="_blank" rel="noopener">
+            <img src="./images/telegram.svg" alt="" class="header__tg-icon" width="38" height="38">
+      </a>
+      <button class="btn btn--primary header__btn" type="button" data-modal-open>
+            Записаться
+      </button>
+   </div>
+
+   <button class="header__burger" type="button" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+   </button>
+</div>
+
+<div class="mobile-menu" id="mobile-menu">
+   <nav class="mobile-menu__nav">
+      <a href="#about" class="mobile-menu__link">О студии</a>
+      <a href="#tech" class="mobile-menu__link">Аппарат</a>
+      <a href="#price" class="mobile-menu__link">Прайс</a>
+      <a href="#contacts" class="mobile-menu__link">Контакты</a>
+   </nav>
+
+   <div class="mobile-menu__socials">
+      <a href="https://t.me/" target="_blank" rel="noopener" class="mobile-menu__social" aria-label="Telegram">
+            <img src="./images/telegram.svg" alt="">
+      </a>
+      <a href="https://wa.me/" target="_blank" rel="noopener" class="mobile-menu__social" aria-label="WhatsApp">
+            <img src="./icons/max-icon.svg" alt="">
+      </a>
+      <a href="https://www.instagram.com/tish.i.glad" target="_blank" rel="noopener" class="mobile-menu__social" aria-label="Instagram">
+            <img src="./icons/instagram.svg" alt="">
+      </a>
+      <a href="https://vk.ru/tish_i_glad" target="_blank" rel="noopener" class="mobile-menu__social" aria-label="ВКонтакте">
+            <img src="./icons/vk.svg" alt="">
+      </a>
+   </div>
+
+   <a href="tel:+79999873337" class="mobile-menu__phone">+7 999 987-33-37</a>
+</div>
+</header>
 
    <main>
       <section class="hero">
