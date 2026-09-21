@@ -1,0 +1,129 @@
+.footer {
+   padding: 10px 0 30px;
+   background-color: var(--color-white);
+   border-radius: 40px 40px 0 0;
+   border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.footer__inner {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.footer__top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+}
+
+.footer__logo {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.footer__logo .logo__img {
+   width: 25px;
+   height: 50px;
+}
+
+.footer__logo .logo__text {
+   font-family: var(--font-heading);
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 1;
+   color: var(--color-primary);
+   display: flex;
+   flex-direction: column;
+}
+
+.footer__logo .logo__subtitle {
+   font-family: var(--font-body);
+   font-size: 11px;
+   font-weight: 300;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: var(--color-text-muted);
+   margin-top: 4px;
+}
+
+.footer__info {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   justify-content: space-between;
+   flex: 1;
+   max-width: 800px;
+}
+
+.footer__address, .footer__phone {
+   font-family: var(--font-body);
+   font-weight: 300;
+   font-size: 18px;
+   color: var(--color-text);
+   transition: color var(--transition-speed) ease;
+}
+
+.footer__address:hover, .footer__phone:hover { color: var(--color-primary); }
+
+.footer__star {
+   width: 16px;
+   height: 16px;
+   flex-shrink: 0;
+}
+
+.footer__socials {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.footer__social-link {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
+}
+
+.footer__social-link img {
+   width: 24px;
+   height: 24px;
+}
+
+.footer__social-link:hover {
+   transform: scale(1.1);
+   opacity: 0.7;
+}
+
+.footer__bottom {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 40px;
+}
+
+.footer__copyright {
+   font-family: var(--font-body);
+   font-weight: 300;
+   font-size: 16px;
+   color: var(--color-text-muted);
+}
+
+.footer__nav-list {
+   display: flex;
+   gap: 105px;
+   flex: 1;
+   justify-content: space-between;
+}
+
+.footer__nav-link {
+   font-family: var(--font-body);
+   font-weight: 300;
+   font-size: 16px;
+   color: var(--color-text-muted);
+   transition: color var(--transition-speed) ease;
+}
+
+.footer__nav-link:hover { color: var(--color-primary); }

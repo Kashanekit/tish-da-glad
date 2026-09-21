@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+   <title>Тишь да гладь</title>
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+
+   <link rel="stylesheet" href="css/blocks/header.css">
+   <link rel="stylesheet" href="css/blocks/hero.css">
+   <link rel="stylesheet" href="css/blocks/about.css">
+   <link rel="stylesheet" href="css/blocks/tech.css">
+   <link rel="stylesheet" href="css/blocks/price.css">
+   <link rel="stylesheet" href="css/blocks/stages.css">
+   <link rel="stylesheet" href="css/blocks/discount.css">
+   <link rel="stylesheet" href="css/blocks/contacts.css">
+   <link rel="stylesheet" href="css/blocks/footer.css">
+   <link rel="stylesheet" href="css/blocks/modal.css">
+</head>
+<body>
+
+   <header class="header">
+      <div class="container header__inner">
+         <a href="#" class="header__logo logo">
+            <img src="./images/logo.svg" alt="Тишь да гладь" class="logo__img" width="20" height="40">
+            <span class="logo__text">
+               Тишь да гладь
+               <span class="logo__subtitle">студия лазерной эпиляции</span>
+            </span>
+         </a>
+
+         <nav class="header__nav nav">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#about" class="nav__link">О студии</a></li>
+               <li class="nav__item"><a href="#tech" class="nav__link">Аппарат</a></li>
+               <li class="nav__item"><a href="#price" class="nav__link">Прайс</a></li>
+               <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+         </nav>
+
+         <div class="header__contacts">
+            <a href="tel:+79999873337" class="header__phone">+7 999 987-33-37</a>
+            <a href="https://t.me/" class="header__tg" aria-label="Telegram" target="_blank" rel="noopener">
+               <img src="./images/telegram.svg" alt=""  class="header__tg-icon" width="38" height="38">
+            </a>
+            <button class="btn btn--primary header__btn" type="button" data-modal-open>
+               Записаться
+            </button> 
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="hero">
+         <div class="hero__wrap">
+            <div class="hero__bg" style="background-image: url('./images/hero-bg.jpg');"></div>
+            
+            <div class="container hero__inner">
+               <div class="hero__content">
+                  <h1 class="hero__title">
+                     Абсолютная тишь<br>
+                     для разума. <span class="hero__title-accent">Идеальная</span><br>
+                     <span class="hero__title-accent">гладь для тела.</span>
+                  </h1>
+
+                  <div class="hero__desc">
+                     <img src="./images/heart.svg" alt="" class="hero__desc-icon" width="44" height="44">
+                     <p class="hero__text">
+                        Бережная лазерная эпиляция в Зеленограде.<br>
+                        <strong><span class="hero__subtext">Без боли, без стеснения, с любовью к вам.</span></strong>
+                     </p>
+                  </div>
+
+                  <div class="hero__promo promo">
+                     <img src="./images/discount.svg" alt="" class="promo__icon" width="60" height="60">
+                     <div class="promo__text">
+                        <strong class="promo__title">Скидка 50%</strong>
+                        <span class="promo__subtitle">на первое посещение</span>
+                     </div>
+                     <button class="btn btn--primary promo__btn" type="button" data-modal-open>
+                        Забрать скидку и записаться
+                        <span class="btn__arrow">→</span>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="hero__image">
+                  <div class="hero__arch">
+                     <img src="./images/star1.svg" alt="" class="hero__star hero__star--1">
+                     <img src="./images/star2.svg" alt="" class="hero__star hero__star--2">
+                  
+                     <img src="./images/hero-flowers1.png" alt="" class="hero__flower hero__flower--1">
+                     <img src="./images/hero-flowers2.png" alt="" class="hero__flower hero__flower--2">
+                  
+                     <img src="./images/hero-woman.png" alt="Лазерная эпиляция в студии Тишь да гладь" class="hero__img">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="about" id="about">
+         <div class="container">
+            <h2 class="about__title">Забота,<span class="about__subtitle"> заложенная в традиции</span></h2>
+            <div class="about__grid">
+               <div class="about__intro">
+                  <p class="about__intro-text">
+                     <span class="about__intro-subtext">«Тишь да гладь»</span> — это пространство, где высокие технологии
+                     лазерной косметологии встречаются с искренней заботой
+                     о вашем комфорте и здоровье кожи.
+                  </p>
+                  <img src="./images/about-flower.svg" alt="" class="about__intro-flower">
+               </div>
+               
+               <div class="about__cards info__card--1">
+                  <article class="info__card">
+                     <img src="./icons/hands.svg" alt="" class="info__card-icon">
+                     <h3 class="info__card-title">Бережный подход</h3>
+                     <p class="info__card-text">
+                        Индивидуальные настройки лазера под Ваш тип кожи
+                        и индивидуальный порог чувствительности.
+                     </p>
+                  </article>
+
+                  <article class="info__card info__card--2">
+                     <img src="./icons/drop.svg" alt="" class="info__card-icon">
+                     <h3 class="info__card-title">Безупречная чистота</h3>
+                     <p class="info__card-text">
+                        Использование только одноразовых расходных материалов
+                        и строгое соблюдение норм СанПиН (стерильность — наш приоритет).
+                     </p>
+                  </article>
+
+                  <article class="info__card info__card--3">
+                     <img src="./icons/comfort.svg" alt="" class="info__card-icon info__card--3">
+                     <h3 class="info__card-title">Комфорт</h3>
+                     <p class="info__card-text">
+                        Процедура проходит в комфортных условиях и без боли —
+                        благодаря мощной системе охлаждения лазера.
+                     </p>
+                  </article>
+
+                  <article class="info__card info__card--4">
+                     <img src="./icons/sparkles.svg" alt="" class="info__card-icon">
+                     <h3 class="info__card-title">Результат</h3>
+                     <p class="info__card-text">
+                        Гладкость, которая остаётся с вами на годы.
+                     </p>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+<section class="tech" id="tech">
+   <div class="tech__wrap">
+      <div class="tech__bg" style="background-image: url('./images/tech-bg.svg');"></div>
+
+      <div class="container tech__inner">
+         <div class="tech__content">
+            <h2 class="tech__title">
+               Современные технологии <span class="tech__subtitle">на страже вашей гладкости</span>
+            </h2>
+            <p class="tech__text tech__text--1">
+               В студии <span class="tech__subtext">«Тишь да Гладь»</span> мы не компромиссим с качеством, поэтому выбрали
+               премиальный диодный лазер нового поколения Prof Beauty Ultimate.
+            </p>
+            <p class="tech__text tech__text--2">
+               Это <span class="tech__subtext">«золотой стандарт»</span> современной косметологии, который превращает процедуру
+               эпиляции из неприятной необходимости в расслабляющий и комфортный ритуал.
+            </p>
+
+            <div class="tech__cards">
+               <article class="tech__card">
+                  <h3 class="tech__card-title">Без боли и ожогов</h3>
+                  <p class="tech__card-text">
+                     Мощное охлаждение аппарата превращает процедуру в комфорт даже
+                     на бикини и лице — только приятная прохлада и легкое тепло.
+                  </p>
+               </article>
+
+               <article class="tech__card">
+                  <h3 class="tech__card-title">Результат после 1 сеанса</h3>
+                  <p class="tech__card-text">
+                     Лазер точечно разрушает фолликул. Через 10-14 дней выпадет
+                     до 30% волос, остальные станут мягче и тоньше.
+                  </p>
+               </article>
+
+               <article class="tech__card">
+                  <h3 class="tech__card-title">Гладкая кожа без раздражения</h3>
+                  <p class="tech__card-text">
+                     Навсегда забудьте о вросших волосах, черных точках и покраснениях.
+                     Кожа — как шелк.
+                  </p>
+               </article>
+            </div>
+         </div>
+      </div>
+
+      <div class="tech__device">
+         <img src="./images/tech-fon.svg" alt="" class="tech__fon">
+         <div class="tech__badge">
+            <img src="./images/tech-badge.svg" alt="" class="tech__badge-rotating">
+            <div class="tech__badge-cover"></div>
+            <img src="./images/tech-badge-flower.svg" alt="" class="tech__badge-flower">
+         </div>
+         <img src="./images/tech-device.svg" alt="Аппарат Prof Beauty Ultimate" class="tech__device-img">
+      </div>
+   </div>
+</section>
+
+      <section class="price" id="price">
+         <img src="./images/price-flower-top.svg" alt="" class="price__flower price__flower--top">
+
+         <div class="container">
+            <h2 class="price__title">Прайс-лист и комплексы</h2>
+
+            <div class="price__grid">
+               <article class="price__card">
+                  <span class="price__card-label">Комплекс</span>
+                  <h3 class="price__card-name">«Краса»</h3>
+                  <div class="price__card-icon-wrap">
+                     <img src="./icons/crown-krasa.svg" alt="" class="price__card-icon">
+                  </div>
+                  <span class="price__card-zones-label">Зоны</span>
+                  <p class="price__card-zones">Бикини + подмышки</p>
+                  <span class="price__card-price">2 800 ₽</span>
+               </article>
+
+               <article class="price__card">
+                  <span class="price__card-label">Комплекс</span>
+                  <h3 class="price__card-name">«Барышня»</h3>
+                  <div class="price__card-icon-wrap">
+                     <img src="./icons/crown-baryshnya.svg" alt="" class="price__card-icon">
+                  </div>
+                  <span class="price__card-zones-label">Зоны</span>
+                  <p class="price__card-zones">Бикини + подмышки + голени</p>
+                  <span class="price__card-price">4 100 ₽</span>
+               </article>
+
+               <article class="price__card">
+                  <span class="price__card-label">Комплекс</span>
+                  <h3 class="price__card-name">«Царевна»</h3>
+                  <div class="price__card-icon-wrap">
+                     <img src="./icons/crown-tsarevna.svg" alt="" class="price__card-icon">
+                  </div>
+                  <span class="price__card-zones-label">Зоны</span>
+                  <p class="price__card-zones">Бикини + подмышки + ноги полностью</p>
+                  <span class="price__card-price">5 300 ₽</span>
+               </article>
+
+               <article class="price__card">
+                  <span class="price__card-label">Комплекс</span>
+                  <h3 class="price__card-name">«Княгиня»</h3>
+                  <div class="price__card-icon-wrap">
+                     <img src="./icons/crown-knyaginya.svg" alt="" class="price__card-icon">
+                  </div>
+                  <span class="price__card-zones-label">Все тело мини</span>
+                  <p class="price__card-zones">Подмышки + бикини + ноги полностью + руки полностью + белая линия живота</p>
+                  <p class="price__card-bonus">+ мини зона в подарок</p>
+                  <span class="price__card-price">8 200 ₽</span>
+               </article>
+
+               <article class="price__card">
+                  <span class="price__card-label">Комплекс</span>
+                  <h3 class="price__card-name">«Императрица»</h3>
+                  <div class="price__card-icon-wrap">
+                     <img src="./icons/crown-imperatritsa.svg" alt="" class="price__card-icon">
+                  </div>
+                  <span class="price__card-zones-label">Все тело макси</span>
+                  <p class="price__card-zones">Подмышки + бикини + ноги полностью + руки полностью + живот полностью + ягодицы + поясница</p>
+                  <p class="price__card-bonus">+2 мини зона в подарок</p>
+                  <span class="price__card-price">10 500 ₽</span>
+               </article>
+            </div>
+         
+         <div class="price__toggle-area">
+            <img src="./images/price-flower-bottom.svg" alt="" class="price__flower price__flower--bottom">
+            
+            <details class="price__details">
+               <summary class="price__toggle">
+                  <span class="price__toggle-text"></span>
+                  <span class="price__toggle-arrow">↓</span>
+               </summary>
+
+               <div class="price__list">
+                  <ul class="price__list-col">
+                     <li><span>Бикини глубокое</span><span>2 300 ₽</span></li>
+                     <li><span>Бикини классическое</span><span>1 400 ₽</span></li>
+                     <li><span>Подмышки</span><span>1 000 ₽</span></li>
+                     <li><span>Голени</span><span>2 100 ₽</span></li>
+                     <li><span>Ноги полностью</span><span>3 600 ₽</span></li>
+                  </ul>
+
+                  <ul class="price__list-col">
+                     <li><span>Бедра</span><span>2 600 ₽</span></li>
+                     <li><span>Грудь</span><span>1 600 ₽</span></li>
+                     <li><span>Живот полностью</span><span>2 000 ₽</span></li>
+                     <li><span>Белая линия живота</span><span>600 ₽</span></li>
+                     <li><span>Лицо полностью</span><span>1 800 ₽</span></li>
+                  </ul>
+
+                  <ul class="price__list-col">
+                     <li><span>Усики</span><span>600 ₽</span></li>
+                     <li><span>Подбородок</span><span>800 ₽</span></li>
+                     <li><span>Ореолы</span><span>800 ₽</span></li>
+                     <li><span>Поясница</span><span>1 000 ₽</span></li>
+                     <li><span>Руки до локтя</span><span>1 500 ₽</span></li>
+                  </ul>
+
+                  <ul class="price__list-col">
+                     <li><span>Руки полностью</span><span>2 300 ₽</span></li>
+                     <li><span>Спина полностью</span><span>2 300 ₽</span></li>
+                     <li><span>Шея</span><span>1 500 ₽</span></li>
+                     <li><span>Щеки</span><span>1 000 ₽</span></li>
+                     <li><span>Ягодицы</span><span>1 500 ₽</span></li>
+                  </ul>
+               </div>
+            </details>
+         </div>
+         </div>
+      </section>
+
+      <section class="stages">
+         <div class="container">
+            <h2 class="stages__title">Как проходит процедура</h2>
+
+            <div class="stages__grid">
+               <article class="stage__card">
+                  <div class="stage__card-photo-wrap">
+                     <img src="./images/stage1.svg" alt="" class="stage__card-photo">
+                     <img src="./icons/stage__number--1.svg" alt="Шаг 1" class="stage__card-number">
+                  </div>
+                  <h3 class="stage__card-title">Запись и подготовка</h3>
+                  <p class="stage__card-text">
+                     Подбираем программу под ваш тип кожи и волос
+                  </p>
+               </article>
+
+               <article class="stage__card">
+                  <div class="stage__card-photo-wrap">
+                     <img src="./images/stage2.svg" alt="" class="stage__card-photo">
+                     <img src="./icons/stage__number--2.svg" alt="Шаг 2" class="stage__card-number">
+                  </div>
+                  <h3 class="stage__card-title">Встреча в студии</h3>
+                  <p class="stage__card-text">
+                     Деликатное очищение и подготовка кожи к процедуре
+                  </p>
+               </article>
+
+               <article class="stage__card">
+                  <div class="stage__card-photo-wrap">
+                     <img src="./images/stage3.svg" alt="" class="stage__card-photo">
+                     <img src="./icons/stage__number--3.svg" alt="Шаг 3" class="stage__card-number">
+                  </div>
+                  <h3 class="stage__card-title">Процедура без боли</h3>
+                  <p class="stage__card-text">
+                     Лазер воздействует только на фолликул — кожа остается целой
+                  </p>
+               </article>
+
+               <article class="stage__card">
+                  <div class="stage__card-photo-wrap">
+                     <img src="./images/stage4.svg" alt="" class="stage__card-photo">
+                     <img src="./icons/stage__number--4.svg" alt="Шаг 4" class="stage__card-number">
+                  </div>
+                  <h3 class="stage__card-title">Уход и рекомендации</h3>
+                  <p class="stage__card-text">
+                     Идеальная гладкость без боли, покраснений и вросших волос
+                  </p>
+               </article>
+            </div>
+         </div>
+      </section>
+
+   <section class="discount">
+   <div class="container discount__inner">
+      <div class="discount__content">
+         <h2 class="discount__title">
+               Гладкость, к которой хочется прикасаться
+         </h2>
+         <p class="discount__subtitle">
+               Запишитесь на первую процедуру
+               <span class="discount__subtitle-accent">со скидкой 50%</span>
+               прямо сейчас
+         </p>
+      </div>
+      <div class="discount__visual">
+         <img src="./images/lines.png" alt="" class="discount__lines">
+         <button class="btn discount__btn" type="button" data-modal-open>
+               Забрать скидку и записаться
+               <span class="btn__arrow">→</span>
+         </button>
+      </div>
+   </div>
+</section>
+
+      <section class="contacts" id="contacts">
+         <div class="container">
+            <h2 class="contacts__title">Свяжитесь с нами</h2>
+
+            <div class="contacts__grid">
+               <div class="contacts__blok contacts__blok--phone">
+                  <a href="tel:+79999873337" class="contacts__phone">+7 999 987-33-37</a>
+                  <p class="contacts__hours">Ежедневно с 10:00 до 21:00</p>
+
+                  <div class="contacts__messengers">
+                     <div class="contacts__icons">
+                        <img src="./icons/telegram-icon.svg" alt="" class="contacts__icon">
+                        <img src="./icons/max-icon.svg" alt="" class="contacts__icon">
+                     </div>
+                     <p class="contacts__messengers-text">Свяжитесь с нами<br>в мессенджере</p>
+                  </div>
+               </div>
+
+               <div class="contacts__block contacts__block--address">
+                  <h3 class="contacts__blok-title">Ждем Вас в студии</h3>
+
+                  <p class="contacts__address">г. Зеленоград, корпус 405А, 3 этаж</p>
+                  <a href="https://yandex.ru/maps/?text=Зеленоград, корпус 405А"
+                     class="contacts__route-btn"
+                     target="_blank"
+                     rel="noopener">
+                     Построить маршрут
+                     <img src="./icons/pin.svg" alt="" class="contacts__route-icon">
+                  </a>
+               </div>
+
+               <div class="contacts__block contacts__block--socials">
+                  <div class="contacts__social">
+                     <a href="https://vk.ru/tish_i_glad" target="_blank" rel="noopener" class="contact__social-link" aria-label="Instagram">
+                        <img src="./icons/vk.svg" alt="" class="contacts__social-icon">
+                     </a>
+                     <div class="contacts__social-info">
+                        <span class="contacts__social-name">@tish.i.glad</span>
+                        <span class="contacts__social-desc">Мы на связи в ВКонтакте</span>
+                     </div>
+                  </div>
+
+                  <div class="contacts__social">
+                     <a href="https://www.instagram.com/tish.i.glad" target="_blank" rel="noopener" class="contact__social-link" aria-label="Instagram">
+                        <img src="./icons/instagram.svg" alt="" class="contacts__social-icon">
+                     </a>
+                     
+                     <div class="contacts__social-info">
+                        <span class="contacts__social-name">@tish.i.glad</span>
+                        <span class="contacts__social-desc">Следите за новостями Instagram</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="contacts__map">
+               <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A53a93786268c1c744ab2f9179ce464ba16e255b63737b85d6e353772d8b7831b&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="container footer__inner">
+         <div class="footer__top">
+            <a href="" class="fooetr__logo logo">
+               <img src="./images/logo.svg" alt="Тишь да гладь" class="logo__img">
+               <span class="logo__text">
+                  Тишь да гладь
+                  <span class="logo__subtitle">студия лазерной эпиляции</span>
+               </span>
+            </a>
+
+            <div class="footer__info">
+               <a href="https://yandex.ru/maps/?text=Зеленоград,%20корпус%20405А"
+                  target="_blank"
+                  rel="noopener"
+                  class="footer__address">
+                  г. Зеленоград, корпус 405А, 3 этаж
+               </a>
+               <img src="./icons/star.svg" alt="" class="footer__star">
+               <a href="tel:+79999873337" class="footer__phone">
+                  +7 999 987-33-37
+               </a>
+               <img src="./icons/star.svg" alt="" class="footer__star">
+               <div class="footer__socials">
+                  <a href="https://www.instagram.com/tish.i.glad" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+                     <img src="./icons/instagram-outline.svg" alt="">
+                  </a>
+                  <a href="https://vk.ru/tish_i_glad" target="_blank" rel="noopener" class="footer__social-link" aria-label="ВКонтакте">
+                     <img src="./icons/vk-outline.svg" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__bottom">
+            <span class="footer__copyright">2026 © Тишь да гладь</span>
+            <nav class="footer__nav">
+               <ul class="footer__nav-list">
+                  <li><a href="#" class="footer__nav-link">Главная страница</a></li>
+                  <li><a href="#about" class="footer__nav-link">О студии</a></li>
+                  <li><a href="#tech" class="footer__nav-link">Аппарат</a></li>
+                  <li><a href="#price" class="footer__nav-link">Прайс</a></li>
+                  <li><a href="#contacts" class="footer__nav-link">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </footer>
+
+<div class="modal" id="modal">
+   <div class="modal__overlay" data-modal-close></div>
+
+   <div class="modal__window">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-modal-close>
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+               <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+         </svg>
+      </button>
+
+      <h2 class="modal__title">Форма заявки</h2>
+      <p class="modal__subtitle">
+         Укажите Ваши имя и телефон, мы свяжемся с Вами в ближайшее время
+      </p>
+
+      <form class="modal__form" novalidate>
+         <input
+               type="text"
+               class="modal__input"
+               name="name"
+               placeholder="Ваше имя"
+               required
+         >
+
+         <input
+               type="tel"
+               id="phone-input"
+               class="modal__input modal__input--phone"
+               name="phone"
+               required
+         >
+
+         <button type="submit" class="btn btn--primary modal__submit">
+               Отправить
+         </button>
+      </form>
+   </div>
+</div>
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

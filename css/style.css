@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../fonts/Cormorant-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --color-primary: #5C0F1F;
+    --color-bg: #F7F5F0;
+    --color-white: #fff;
+    --color-text: #000000;
+    --color-text-muted: #0101019e;
+
+    --font-heading: 'Cormorant', Georgia, serif;
+    --font-body: 'Manrope', Arial, sans-serif;
+
+    --container-width: 1200px;
+    --container-padding: 20px;
+
+    --transition-speed: 0.3s;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 60px; }
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; border: none; background: none; cursor: pointer; }
+ul { list-style: none; }
+
+
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    cursor: pointer;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.btn__arrow {
+    display: inline-block;
+    transition: transform var(--transition-speed) ease;
+}
+
+.btn:hover .btn__arrow {
+    transform: translateX(4px);
+}
