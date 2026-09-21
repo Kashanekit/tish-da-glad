@@ -525,26 +525,25 @@
          Укажите Ваши имя и телефон, мы свяжемся с Вами в ближайшее время
       </p>
 
-      <form class="modal__form" novalidate>
-         <input
-               type="text"
-               class="modal__input"
-               name="name"
-               placeholder="Ваше имя"
-               required
-         >
-
-         <input
-               type="tel"
-               id="phone-input"
-               class="modal__input modal__input--phone"
-               name="phone"
-               required
-         >
-
-         <button type="submit" class="btn btn--primary modal__submit">
-               Отправить
-         </button>
+   <form class="modal__form" action="https://formspree.io/f/xppwdqan" method="POST" novalidate>
+   <input
+      type="text"
+      class="modal__input"
+      name="name"
+      placeholder="Ваше имя"
+      required
+   >
+   <input
+      type="tel"
+      id="phone-input"
+      class="modal__input modal__input--phone"
+      name="phone"
+      required
+   >
+   <button type="submit" class="btn btn--primary modal__submit">
+      Отправить
+   </button>
+</form>
       </form>
    </div>
 </div>

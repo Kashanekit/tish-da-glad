@@ -38,28 +38,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
    const form = modal.querySelector('.modal__form');
    if (form) {
-      form.addEventListener('submit', (e) => {
+      form.addEventListener('submit', async (e) => {
          e.preventDefault();
 
          const nameValue = form.querySelector('input[name="name"]').value.trim();
-         const phoneValue = iti ? iti.getNumber() : phoneInput.value;
+         const phoneValue = iti ? iti.getNumber() : (phoneInput ? phoneInput.value : '');
 
          if (!nameValue) {
                alert('Пожалуйста, укажите имя');
                return;
          }
 
-         if (iti && !iti.isValidNumber()) {
+         if (!phoneValue || phoneValue.replace(/\D/g, '').length < 10) {
                alert('Пожалуйста, введите корректный номер телефона');
                return;
          }
 
-         alert(`Спасибо, ${nameValue}! Мы свяжемся с Вами по номеру ${phoneValue}.`);
+         const btn = form.querySelector('button[type="submit"]');
+         const originalText = btn.textContent;
+         btn.textContent = 'Отправляем...';
+         btn.disabled = true;
 
-         form.reset();
-         if (iti) iti.setCountry('ru');
-         modal.classList.remove('is-open');
-         document.body.style.overflow = '';
+         try {
+               const response = await fetch(form.action, {
+                  method: 'POST',
+                  headers: {
+                     'Accept': 'application/json',
+                     'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                     name: nameValue,
+                     phone: phoneValue
+                  })
+               });
+
+               if (response.ok) {
+                  alert(`Спасибо, ${nameValue}! Мы свяжемся с Вами в ближайшее время.`);
+                  form.reset();
+                  if (iti) iti.setCountry('ru');
+                  modal.classList.remove('is-open');
+                  document.body.style.overflow = '';
+               } else {
+                  const error = await response.json().catch(() => ({}));
+                  alert('Что-то пошло не так. Попробуйте ещё раз.');
+                  console.error('Formspree error:', error);
+               }
+         } catch (err) {
+               alert('Ошибка сети. Проверьте соединение с интернетом.');
+               console.error('Network error:', err);
+         } finally {
+               btn.textContent = originalText;
+               btn.disabled = false;
+         }
       });
    }
 });
