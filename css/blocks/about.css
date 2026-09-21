@@ -120,6 +120,7 @@
    }
 
    .about__intro-text { font-size: 16px; }
+   .about__intro-subtext { font-size: 14px; }
    .about__intro-flower { width: 220px; height: auto; left: -30px; bottom: -20px; }
 
    .about__cards { grid-template-columns: 1fr; gap: 16px; }
